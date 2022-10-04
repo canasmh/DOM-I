@@ -85,4 +85,8 @@ contactParagraphs[2].textContent = siteContent.contact["email"];
 
 console.log(h4s);
 
+let footer = document.querySelector("footer a");
+footer.textContent = siteContent.footer.copyright;
+footer.classList.add("bold");
+
 console.log('project wired!')
