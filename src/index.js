@@ -39,4 +39,11 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+let navLinks = Array.from(document.querySelectorAll("nav a"))
+
+for (let i=0; i < navLinks.length; i++) {
+  navLinks[i].textContent = siteContent.nav[`nav-item-${i + 1}`]
+  navLinks[i].classList.add("italic")
+}
+
 console.log('project wired!')
