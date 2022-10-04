@@ -46,4 +46,13 @@ for (let i=0; i < navLinks.length; i++) {
   navLinks[i].classList.add("italic")
 }
 
+let logoImg = document.querySelector("#logo-img");
+logoImg.src = siteContent.images["logo-img"];
+
+let ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent.images["cta-img"];
+
+let middleImage = document.querySelector("#middle-img");
+middleImage.src = siteContent.images["accent-img"];
+
 console.log('project wired!')
