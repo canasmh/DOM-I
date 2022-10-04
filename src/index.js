@@ -75,6 +75,14 @@ pTags[2].textContent = siteContent["main-content"]["services-content"];
 pTags[3].textContent = siteContent["main-content"]["product-content"];
 pTags[4].textContent = siteContent["main-content"]["vision-content"];
 
+let contactHeader = document.querySelector("section.contact h4");
+contactHeader.textContent = siteContent.contact["contact-h4"];
+
+let contactParagraphs = document.querySelectorAll("section.contact p");
+contactParagraphs[0].textContent = siteContent.contact["address"];
+contactParagraphs[1].textContent = siteContent.contact["phone"];
+contactParagraphs[2].textContent = siteContent.contact["email"];
+
 console.log(h4s);
 
 console.log('project wired!')
