@@ -55,4 +55,19 @@ ctaImg.src = siteContent.images["cta-img"];
 let middleImage = document.querySelector("#middle-img");
 middleImage.src = siteContent.images["accent-img"];
 
+let h1 = document.querySelector("h1");
+h1.textContent = siteContent.cta.h1;
+
+let ctaButton = document.querySelector("div.cta-text button");
+ctaButton.textContent = siteContent.cta.button;
+
+let h4s = document.querySelectorAll("div.text-content h4");
+h4s[0].textContent = siteContent["main-content"]["features-h4"];
+h4s[1].textContent = siteContent["main-content"]["about-h4"];
+h4s[2].textContent = siteContent["main-content"]["services-h4"];
+h4s[3].textContent = siteContent["main-content"]["product-h4"];
+h4s[4].textContent = siteContent["main-content"]["vision-h4"];
+
+console.log(h4s);
+
 console.log('project wired!')
