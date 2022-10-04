@@ -68,6 +68,13 @@ h4s[2].textContent = siteContent["main-content"]["services-h4"];
 h4s[3].textContent = siteContent["main-content"]["product-h4"];
 h4s[4].textContent = siteContent["main-content"]["vision-h4"];
 
+let pTags = document.querySelectorAll("div.text-content p");
+pTags[0].textContent = siteContent["main-content"]["features-content"];
+pTags[1].textContent = siteContent["main-content"]["about-content"];
+pTags[2].textContent = siteContent["main-content"]["services-content"];
+pTags[3].textContent = siteContent["main-content"]["product-content"];
+pTags[4].textContent = siteContent["main-content"]["vision-content"];
+
 console.log(h4s);
 
 console.log('project wired!')
